@@ -1,0 +1,28 @@
+type Query {
+	hello: String!
+		@rateLimit(window: "2s", max: 1, message: "You are doing that too often.")
+	today: Date @date
+	user(_id: ID!): User @isAuthenticated
+}
+
+type Mutation {
+	login(input: LoginUserInput!): LoginResponse
+}
+
+type User {
+	_id: ID!
+	idAccount: String!
+	isActive: Boolean
+	createdAt: Float
+	updatedAt: Float,
+	fullName: String!
+}
+
+input LoginUserInput {
+	username: String!
+	password: String!
+}
+
+type LoginResponse {
+	accessToken: String!
+}

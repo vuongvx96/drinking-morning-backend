@@ -1,0 +1,23 @@
+type Query {
+  accounts:     [Account] @isAuthenticated
+}
+
+type Mutation {
+  updateAccount(input: ChangePassword!): Boolean @isAuthenticated
+}
+
+type Account {
+  _id:          ID!
+  username:     String
+  password:     String
+  createdBy:    ByUser
+  updatedAt:    Float
+  updatedBy:    ByUser
+
+  fullName:     String
+}
+
+input ChangePassword {
+  oldPassword: String!
+  newPassword: String!
+}

@@ -1,0 +1,1 @@
+web: NODE_ENV=production node -r ./tsconfig-paths-bootstrap.js dist/main.js

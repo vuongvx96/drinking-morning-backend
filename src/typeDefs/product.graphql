@@ -1,0 +1,34 @@
+type Query {
+  productPagedQuery(pagingInfo: PagingInput!, status: Status = active): ProductPagedResult
+}
+
+type Product {
+  _id: ID!
+  collectionId: ID
+  title: String
+  bodyHtml: String
+  vendor: String
+  handle: String
+  templateSuffix: String
+  publishedScope: PublishedScope
+  tags: [String]
+  status: Status
+  image: Image
+  images: [Image]
+  variants: [ProductVariant]
+  options: [ProductOption]
+  createdAt: Date
+  createdBy: ByUser
+  updatedAt: Date
+  updatedBy: ByUser
+  publishedAt: Date
+  publishedBy: ByUser
+}
+
+type ProductPagedResult implements PagedResult {
+	currentPage: Int
+	pageCount: Int
+	pageSize: Int
+	rowCount: Int
+	items: [Product]
+}

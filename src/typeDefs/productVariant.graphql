@@ -1,0 +1,38 @@
+type ProductVariant {
+  _id: ID!
+  productId: ID
+  title: String
+  position: Int
+  sku: String
+  price: Float
+  compareAtPrice: String
+  fullfillmentService: String
+  inventoryManagement: String
+  inventoryPolicy: InventoryPolicy
+  inventoryQuantity: Float
+  presentmentPrices: [PresentmentPrice]
+  option1: String
+  option2: String
+  option3: String
+  barcode: String
+  grams: Float
+  imageId: ID
+  taxable: Boolean
+  weight: Float
+  weightUnit: WeightUnit
+  requiresShipping: Boolean
+  createdAt: Date
+  createdBy: ByUser
+  updatedAt: Date
+  updatedBy: ByUser
+}
+
+type Price {
+  currencyCode: String
+  amount: String
+}
+
+type PresentmentPrice {
+  price: Price
+  compareAtPrice: Price
+}

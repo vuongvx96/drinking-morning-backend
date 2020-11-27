@@ -1,0 +1,7 @@
+type ProductOption {
+  _id: ID!
+  productId: ID #product
+  name: String
+  position: Int
+  values: [String]
+}

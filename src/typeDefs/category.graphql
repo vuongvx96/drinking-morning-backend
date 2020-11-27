@@ -1,0 +1,10 @@
+type Category {
+  _id: ID!
+  name: String
+  type: CategoryType
+}
+
+type Query {
+  categories: [Category]
+  groupedCategories: JSON
+}

@@ -1,0 +1,14 @@
+type Image {
+  _id: ID!
+  productId: String
+  position: Int
+  name: String
+  alt: String
+  width: Float
+  height: Float
+  src: String
+  createdAt: Date
+  createdBy: ByUser
+  updatedAt: Date
+  updatedBy: ByUser
+}

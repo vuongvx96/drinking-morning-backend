@@ -1,0 +1,33 @@
+enum CategoryType {
+	TYPE
+	MAKE
+	ROASTER
+	FLAVOR
+	ROAST_LEVEL
+	PROCESSING
+	REGION
+	LOCATION
+}
+
+enum PublishedScope {
+  web
+  global
+}
+
+enum Status {
+  active
+  archived
+  draft
+}
+
+enum WeightUnit {
+  g
+  kg
+  oz
+  lb
+}
+
+enum InventoryPolicy {
+  deny
+  continue
+}
