@@ -15,13 +15,13 @@ const canDirectSearchFields = new Set([
 @Resolver('Product')
 export class ProductResolver {
   @Query()
-  async categories(
+  async productPagedQuery(
     @Args() { pagingInfo, status },
   ): Promise<ProductPagedResult> {
     const condition: any = {
       status: status || 'active'
     }
-    Object.entries(pagingInfo.filterModel).forEach(([k, v]) => {
+    Object.entries(pagingInfo?.filterModel || {}).forEach(([k, v]) => {
       if (canDirectSearchFields.has(k)) {
         condition[k] = buildFilterQuery(v)
       } else if (k === 'tags') {
@@ -40,7 +40,9 @@ export class ProductResolver {
       },
     ]
 
-    let currentPage = pagingInfo.page
+    pagingInfo.page = pagingInfo.page || 1
+    pagingInfo.pageSize = pagingInfo.pageSize || 50
+    let currentPage = pagingInfo.page || 1
     const pageCount = Math.ceil(rowCount / pagingInfo.pageSize)
     if (!pageCount) {
       return {
@@ -55,7 +57,7 @@ export class ProductResolver {
     if (currentPage > pageCount) currentPage = pageCount
     else if (currentPage < 1) currentPage = 1
 
-    if (pagingInfo.sortModel.length) {
+    if (pagingInfo?.sortModel?.length) {
       const sortPipeline = {}
       for (const e of pagingInfo.sortModel) {
         sortPipeline[e.colId] = e.sort === 'desc' ? -1 : 1

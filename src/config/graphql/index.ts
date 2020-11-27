@@ -7,7 +7,7 @@ import { MockList } from 'graphql-tools'
 import GraphQLJSON, { GraphQLJSONObject } from 'graphql-type-json'
 import * as depthLimit from 'graphql-depth-limit'
 import { getMongoRepository } from 'typeorm'
-import chalk from 'chalk'
+import * as chalk from 'chalk'
 
 import schemaDirectives from './schemaDirectives'
 import directiveResolvers from './directiveResolvers'

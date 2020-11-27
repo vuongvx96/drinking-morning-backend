@@ -1,0 +1,446 @@
+[
+  {
+    "id": 4489548267572,
+    "title": "Anserma Caldas",
+    "body_html": "\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eFertile soils allow for a stunning variety of species to flourish on the farm, making this coffee from Colombia, Anserma Caldas, so sweet and complex in the cup.\u003c/span\u003e",
+    "vendor": "Colonna Coffee",
+    "product_type": "Capsule",
+    "created_at": "2020-03-24T15:09:19+08:00",
+    "handle": "anserma_caldas_colombia-colonnacoffee",
+    "updated_at": "2020-11-26T23:05:24+08:00",
+    "published_at": "2020-04-07T21:46:53+08:00",
+    "template_suffix": "box",
+    "published_scope": "web",
+    "tags": "Country_United-Kingdom, Flavor_Caramel, Flavor_Maple-Syrup, Flavor_Red-Apple, Location_Hongkong, Make_Aluminium, Processing_Washed, Roast-Level_Light, Roaster_Colonna-Coffee, Type_Single-Origin",
+    "variants": [
+      {
+        "id": 31749905711156,
+        "product_id": 4489548267572,
+        "title": "10",
+        "price": "13.00",
+        "sku": "CC_FAC_BOX10_202105",
+        "position": 1,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "10",
+        "option2": null,
+        "option3": null,
+        "created_at": "2020-03-24T15:09:35+08:00",
+        "updated_at": "2020-11-26T23:02:36+08:00",
+        "taxable": true,
+        "barcode": "",
+        "grams": 100,
+        "image_id": null,
+        "weight": 0.1,
+        "weight_unit": "kg",
+        "requires_shipping": true
+      }
+    ],
+    "options": [
+      {
+        "id": 5822097457204,
+        "product_id": 4489548267572,
+        "name": "Size",
+        "position": 1,
+        "values": ["10"]
+      }
+    ],
+    "images": [
+      {
+        "id": 18836388577434,
+        "product_id": 4489548267572,
+        "position": 1,
+        "created_at": "2020-08-30T17:34:09+08:00",
+        "updated_at": "2020-08-30T17:34:09+08:00",
+        "alt": null,
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0013/7700/9716/products/FoundationShort.png?v=1598780049",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 18836388577434,
+      "product_id": 4489548267572,
+      "position": 1,
+      "created_at": "2020-08-30T17:34:09+08:00",
+      "updated_at": "2020-08-30T17:34:09+08:00",
+      "alt": null,
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0013/7700/9716/products/FoundationShort.png?v=1598780049",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 5607684079770,
+    "title": "Attaboy",
+    "body_html": "A seasonal espresso blend comprising of coffees from\u00a0\u003cmeta charset=\"utf-8\"\u003e\u003cspan data-mce-fragment=\"1\"\u003eColombia, and 2 different Ethiopian mills.\u003c/span\u003e",
+    "vendor": "The Cupping Room",
+    "product_type": "Capsule",
+    "created_at": "2020-08-11T15:53:39+08:00",
+    "handle": "attaboy-the-cupping-room",
+    "updated_at": "2020-11-24T16:05:28+08:00",
+    "published_at": "2020-09-03T15:39:56+08:00",
+    "template_suffix": "box",
+    "published_scope": "web",
+    "tags": "Country_Hong-Kong, Flavor_Blackberry, Flavor_Chocolate, Flavor_Citrus, Location_Hongkong, Make_Compostable, Processing_Various, Region_Various, Roast-Level_Medium, Roaster_The-Cupping-Room, Type_Blend",
+    "variants": [
+      {
+        "id": 35675855487130,
+        "product_id": 5607684079770,
+        "title": "10",
+        "price": "15.00",
+        "sku": "CRC_AB_BOX10_202201",
+        "position": 1,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "10",
+        "option2": null,
+        "option3": null,
+        "created_at": "2020-08-11T15:53:39+08:00",
+        "updated_at": "2020-11-24T16:02:45+08:00",
+        "taxable": true,
+        "barcode": "",
+        "grams": 100,
+        "image_id": null,
+        "weight": 0.1,
+        "weight_unit": "kg",
+        "requires_shipping": true
+      }
+    ],
+    "options": [
+      {
+        "id": 7150062305434,
+        "product_id": 5607684079770,
+        "name": "Size",
+        "position": 1,
+        "values": ["10"]
+      }
+    ],
+    "images": [
+      {
+        "id": 18902991503514,
+        "product_id": 5607684079770,
+        "position": 1,
+        "created_at": "2020-09-03T15:38:16+08:00",
+        "updated_at": "2020-09-03T15:38:16+08:00",
+        "alt": null,
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0013/7700/9716/products/Attaboy.png?v=1599118696",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 18902991503514,
+      "product_id": 5607684079770,
+      "position": 1,
+      "created_at": "2020-09-03T15:38:16+08:00",
+      "updated_at": "2020-09-03T15:38:16+08:00",
+      "alt": null,
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0013/7700/9716/products/Attaboy.png?v=1599118696",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 1692683010100,
+    "title": "Balance",
+    "body_html": "\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eThis coffee is a blend of Brazilian coffees sourced from four different regions. Expect the cup to be bursting with flavours of chocolates and hazelnut. You can't go wrong with this coffee for your afternoon fix.\u003c/p\u003e",
+    "vendor": "Volcano Coffee Works",
+    "product_type": "Capsule",
+    "created_at": "2019-04-26T23:34:36+08:00",
+    "handle": "balance-volcanocoffeeworks",
+    "updated_at": "2020-11-19T13:15:06+08:00",
+    "published_at": "2020-04-30T21:37:23+08:00",
+    "template_suffix": "box",
+    "published_scope": "web",
+    "tags": "Country_United-Kingdom, Flavor_Chocolate, Flavor_Hazelnut, Flavor_Honeycomb, Location_Hongkong, Make_Compostable, Roaster_Volcano-Coffee-Works, Type_Blend",
+    "variants": [
+      {
+        "id": 14890905501748,
+        "product_id": 1692683010100,
+        "title": "10",
+        "price": "15.00",
+        "sku": "VC_BA_BOX10_202201",
+        "position": 1,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "10",
+        "option2": null,
+        "option3": null,
+        "created_at": "2019-04-26T23:34:36+08:00",
+        "updated_at": "2020-11-19T13:14:35+08:00",
+        "taxable": true,
+        "barcode": "",
+        "grams": 100,
+        "image_id": null,
+        "weight": 0.1,
+        "weight_unit": "kg",
+        "requires_shipping": true
+      }
+    ],
+    "options": [
+      {
+        "id": 2288881139764,
+        "product_id": 1692683010100,
+        "name": "Size",
+        "position": 1,
+        "values": ["10"]
+      }
+    ],
+    "images": [
+      {
+        "id": 18835945652378,
+        "product_id": 1692683010100,
+        "position": 1,
+        "created_at": "2020-08-30T16:13:21+08:00",
+        "updated_at": "2020-08-30T16:13:21+08:00",
+        "alt": null,
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0013/7700/9716/products/Balance.png?v=1598775201",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 18835945652378,
+      "product_id": 1692683010100,
+      "position": 1,
+      "created_at": "2020-08-30T16:13:21+08:00",
+      "updated_at": "2020-08-30T16:13:21+08:00",
+      "alt": null,
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0013/7700/9716/products/Balance.png?v=1598775201",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 5240669536410,
+    "title": "Bale Mountain",
+    "body_html": "A game changer in our capsule line. This natural Ethiopian coffee is bursting of fruit from its aromas to the flavours that you will taste in the cup.",
+    "vendor": "The Cupping Room",
+    "product_type": "Capsule",
+    "created_at": "2020-05-21T17:00:09+08:00",
+    "handle": "bale-mountain-the-cupping-room",
+    "updated_at": "2020-11-25T12:25:21+08:00",
+    "published_at": "2020-05-21T16:40:44+08:00",
+    "template_suffix": "box",
+    "published_scope": "web",
+    "tags": "Country_Hong-Kong, Flavor_Fruit-Punch, Flavor_Passionfruit, Flavor_Red-Fruit, Location_Hongkong, Make_Compostable, Processing_Natural, Region_Africa, Roast-Level_Light, Roaster_The-Cupping-Room, Type_Single-Origin",
+    "variants": [
+      {
+        "id": 34423190126746,
+        "product_id": 5240669536410,
+        "title": "10",
+        "price": "15.00",
+        "sku": "CRC_BME_BOX10_202104",
+        "position": 1,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "10",
+        "option2": null,
+        "option3": null,
+        "created_at": "2020-05-21T17:00:09+08:00",
+        "updated_at": "2020-11-25T12:20:55+08:00",
+        "taxable": true,
+        "barcode": "",
+        "grams": 100,
+        "image_id": null,
+        "weight": 0.1,
+        "weight_unit": "kg",
+        "requires_shipping": true
+      }
+    ],
+    "options": [
+      {
+        "id": 6703291957402,
+        "product_id": 5240669536410,
+        "name": "Size",
+        "position": 1,
+        "values": ["10"]
+      }
+    ],
+    "images": [
+      {
+        "id": 18835997098138,
+        "product_id": 5240669536410,
+        "position": 1,
+        "created_at": "2020-08-30T16:18:36+08:00",
+        "updated_at": "2020-08-30T16:18:36+08:00",
+        "alt": null,
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0013/7700/9716/products/BaleMountain.png?v=1598775516",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 18835997098138,
+      "product_id": 5240669536410,
+      "position": 1,
+      "created_at": "2020-08-30T16:18:36+08:00",
+      "updated_at": "2020-08-30T16:18:36+08:00",
+      "alt": null,
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0013/7700/9716/products/BaleMountain.png?v=1598775516",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 4496963469364,
+    "title": "Butter Walnut Cake",
+    "body_html": "Just like the name, this coffee is a liquid expression of a Butter Walnut Cake. A balanced single-origin Brazil in the cup.",
+    "vendor": "Yardstick Coffee",
+    "product_type": "Capsule",
+    "created_at": "2020-04-07T15:45:00+08:00",
+    "handle": "butter-walnut-cake-yardstickcoffee",
+    "updated_at": "2020-11-26T18:05:17+08:00",
+    "published_at": "2020-05-21T16:40:44+08:00",
+    "template_suffix": "box",
+    "published_scope": "web",
+    "tags": "Country_Philippines, Flavor_Molasses, Flavor_Toffee, flavor_Walnut, Location_Hongkong, Make_Compostable, Processing_Natural, Roast-Level_Medium, Roaster_Yardstick-Coffee, Type_Single-Origin",
+    "variants": [
+      {
+        "id": 31778103459892,
+        "product_id": 4496963469364,
+        "title": "10",
+        "price": "15.00",
+        "sku": "YS_BWC_202109",
+        "position": 1,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "10",
+        "option2": null,
+        "option3": null,
+        "created_at": "2020-04-07T17:21:19+08:00",
+        "updated_at": "2020-11-26T18:02:01+08:00",
+        "taxable": true,
+        "barcode": "",
+        "grams": 100,
+        "image_id": null,
+        "weight": 0.1,
+        "weight_unit": "kg",
+        "requires_shipping": true
+      }
+    ],
+    "options": [
+      {
+        "id": 5831371718708,
+        "product_id": 4496963469364,
+        "name": "Size",
+        "position": 1,
+        "values": ["10"]
+      }
+    ],
+    "images": [
+      {
+        "id": 18835913900186,
+        "product_id": 4496963469364,
+        "position": 1,
+        "created_at": "2020-08-30T16:11:29+08:00",
+        "updated_at": "2020-08-30T16:11:29+08:00",
+        "alt": null,
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0013/7700/9716/products/ButterWalnutCakwe.png?v=1598775089",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 18835913900186,
+      "product_id": 4496963469364,
+      "position": 1,
+      "created_at": "2020-08-30T16:11:29+08:00",
+      "updated_at": "2020-08-30T16:11:29+08:00",
+      "alt": null,
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0013/7700/9716/products/ButterWalnutCakwe.png?v=1598775089",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 5517146456218,
+    "title": "Chocolate Caramel",
+    "body_html": "\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e\n\u003cdiv\u003eSmooth, Peruvian Arabica coffee infused with the comforting taste of chocolate and creamy caramel.\u003cbr\u003e\n\u003c/div\u003e\n\u003cdiv\u003e\u003c/div\u003e\n\u003cdiv\u003e\u003c/div\u003e\n\u003cbr\u003e\n\u003cdiv\u003e\n\u003cem\u003e*Each box comes with 10 Nespresso\u00ae-compatible capsules.\u003c/em\u003e\u003cbr\u003e\n\u003c/div\u003e\n\u003cdiv\u003e\n\u003cdiv\u003e\u003c/div\u003e\n\u003c/div\u003e",
+    "vendor": "Little's",
+    "product_type": "Capsule",
+    "created_at": "2020-07-21T12:26:12+08:00",
+    "handle": "chocolate-caramel-littles",
+    "updated_at": "2020-11-24T10:20:35+08:00",
+    "published_at": "2020-07-31T13:49:13+08:00",
+    "template_suffix": "box",
+    "published_scope": "web",
+    "tags": "Country_United-Kingdom, Flavor_Caramel, Flavor_Chocolate, Flavor_Cocoa, Location_Hongkong, Make_Aluminium, Processing_Various, Region_South-America, Roast-Level_Dark, Roaster_Littles, Type_Single-Origin",
+    "variants": [
+      {
+        "id": 35297778270362,
+        "product_id": 5517146456218,
+        "title": "10",
+        "price": "15.00",
+        "sku": "LIL_CC_BOX10_202206",
+        "position": 1,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "10",
+        "option2": null,
+        "option3": null,
+        "created_at": "2020-07-21T12:26:12+08:00",
+        "updated_at": "2020-11-24T10:19:11+08:00",
+        "taxable": true,
+        "barcode": "",
+        "grams": 100,
+        "image_id": null,
+        "weight": 0.1,
+        "weight_unit": "kg",
+        "requires_shipping": true
+      }
+    ],
+    "options": [
+      {
+        "id": 7025537220762,
+        "product_id": 5517146456218,
+        "name": "Size",
+        "position": 1,
+        "values": ["10"]
+      }
+    ],
+    "images": [
+      {
+        "id": 18836025016474,
+        "product_id": 5517146456218,
+        "position": 1,
+        "created_at": "2020-08-30T16:22:21+08:00",
+        "updated_at": "2020-08-30T16:22:21+08:00",
+        "alt": null,
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0013/7700/9716/products/Caramel.png?v=1598775741",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 18836025016474,
+      "product_id": 5517146456218,
+      "position": 1,
+      "created_at": "2020-08-30T16:22:21+08:00",
+      "updated_at": "2020-08-30T16:22:21+08:00",
+      "alt": null,
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0013/7700/9716/products/Caramel.png?v=1598775741",
+      "variant_ids": []
+    }
+  }
+]
