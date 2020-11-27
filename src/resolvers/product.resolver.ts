@@ -9,8 +9,7 @@ const canDirectSearchFields = new Set([
   'vendor',
   'handle',
   'productType',
-  'collectionId',
-  'fields',
+  'collectionId'
 ])
 
 @Resolver('Product')
@@ -20,11 +19,13 @@ export class ProductResolver {
     @Args() { pagingInfo, status },
   ): Promise<ProductPagedResult> {
     const condition: any = {
-      status: status || 'active',
+      status: status || 'active'
     }
     Object.entries(pagingInfo.filterModel).forEach(([k, v]) => {
       if (canDirectSearchFields.has(k)) {
         condition[k] = buildFilterQuery(v)
+      } else if (k === 'tags') {
+        condition[k] = { $all: v }
       }
     })
 
