@@ -81,11 +81,6 @@
     "webpack-node-externals": "^2.5.2",
     "webpack-notifier": "^1.10.1"
   },
-  // "husky": {
-  //   "hooks": {
-  //     "pre-commit": "./node_modules/.bin/yarn eslint:check"
-  //   }
-  // },
   "jest": {
     "moduleFileExtensions": [
       "js",

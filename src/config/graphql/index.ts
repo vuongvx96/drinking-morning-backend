@@ -2,22 +2,16 @@ import { PubSub } from 'graphql-subscriptions'
 import { Injectable, Logger } from '@nestjs/common'
 import { GqlOptionsFactory, GqlModuleOptions } from '@nestjs/graphql'
 import { MemcachedCache } from 'apollo-server-cache-memcached'
-// import { join } from 'path'
 import { GraphQLExtension, AuthenticationError } from 'apollo-server-core'
 import { MockList } from 'graphql-tools'
 import GraphQLJSON, { GraphQLJSONObject } from 'graphql-type-json'
 import * as depthLimit from 'graphql-depth-limit'
-// import { fileLoader, mergeTypes } from 'merge-graphql-schemas'
-// import { buildFederatedSchema } from '@apollo/federation'
-// import { ApolloGateway } from '@apollo/gateway'
 import { getMongoRepository } from 'typeorm'
 import chalk from 'chalk'
-// import responseCachePlugin from 'apollo-server-plugin-response-cache'
 
 import schemaDirectives from './schemaDirectives'
 import directiveResolvers from './directiveResolvers'
 import { verifyToken } from '@auth'
-// import { logger } from '../../common'
 
 import {
 	NAME,
@@ -49,7 +43,7 @@ export class GraphqlService implements GqlOptionsFactory {
 				NODE_ENV === 'production'
 					? {
 						origin: FE_URL!,
-						credentials: true // <-- REQUIRED backend setting
+						credentials: true
 					}
 					: true,
 			bodyParserConfig: { limit: '50mb' },
@@ -94,13 +88,7 @@ export class GraphqlService implements GqlOptionsFactory {
 					'queryPlan.hideQueryPlanResponse': false,
 					'request.credentials': 'include', // possible values: 'omit', 'include', 'same-origin'
 					'tracing.hideTracingResponse': false
-				},
-				// tabs: [
-				// 	{
-				// 		endpoint: END_POINT,
-				// 		query: '{ hello }'
-				// 	}
-				// ]
+				}
 			},
 			tracing: NODE_ENV !== 'production',
 			cacheControl: NODE_ENV === 'production' && {
@@ -108,7 +96,6 @@ export class GraphqlService implements GqlOptionsFactory {
 				stripFormattedExtensions: false,
 				calculateHttpHeaders: false
 			},
-			// plugins: [responseCachePlugin()],
 			context: async ({ req, res, connection }) => {
 				if (connection) {
 					const { currentAccount } = connection.context

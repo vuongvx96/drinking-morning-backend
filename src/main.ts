@@ -16,19 +16,29 @@ import {
   ValidationPipe,
   LoggingInterceptor,
   TimeoutInterceptor,
-  LoggerMiddleware
+  LoggerMiddleware,
 } from '@common'
 
-import { NODE_ENV, PRIMARY_COLOR, DOMAIN, PORT, END_POINT, VOYAGER, RATE_LIMIT_MAX, STATIC, FE_URL } from '@environments'
+import {
+  NODE_ENV,
+  PRIMARY_COLOR,
+  DOMAIN,
+  PORT,
+  END_POINT,
+  VOYAGER,
+  RATE_LIMIT_MAX,
+  STATIC,
+  FE_URL,
+} from '@environments'
 
 declare const module: any
 
 async function bootstrap() {
   try {
     const app = await NestFactory.create<NestExpressApplication>(AppModule, {
-			cors: {
-				origin: FE_URL,
-				credentials: true
+      cors: {
+        origin: FE_URL,
+        credentials: true,
       },
       // cors: true
       // logger: new MyLogger()
@@ -49,15 +59,15 @@ async function bootstrap() {
     // NOTE: body parser
     app.use(
       bodyParser.json({
-        limit: '50mb'
-      })
+        limit: '50mb',
+      }),
     )
     app.use(
       bodyParser.urlencoded({
         limit: '50mb',
         extended: true,
-        parameterLimit: 50000
-      })
+        parameterLimit: 50000,
+      }),
     )
 
     // NOTE: rateLimit
@@ -65,82 +75,80 @@ async function bootstrap() {
       rateLimit({
         windowMs: 1000 * 60 * 60,
         max: RATE_LIMIT_MAX, // limit each IP to 100 requests per windowMs,
-        message: '⚠️  Too many request created from this IP, please try again after an hour'
-      })
+        message:
+          '⚠️  Too many request created from this IP, please try again after an hour',
+      }),
     )
 
     // NOTE: voyager
-    NODE_ENV !== 'production' &&
-      app.use(
-        `/${VOYAGER!}`,
-        voyagerMiddleware({
-          displayOptions: {
-            skipRelay: false,
-            skipDeprecated: false
-          },
-          endpointUrl: `${END_POINT!}`
-        })
-      )
+    app.use(
+      `/${VOYAGER!}`,
+      voyagerMiddleware({
+        displayOptions: {
+          skipRelay: false,
+          skipDeprecated: false,
+        },
+        endpointUrl: `${END_POINT!}`,
+      }),
+    )
 
-      // NOTE: interceptors
-      app.useGlobalInterceptors(new LoggingInterceptor())
-      app.useGlobalInterceptors(new TimeoutInterceptor())
+    // NOTE: interceptors
+    app.useGlobalInterceptors(new LoggingInterceptor())
+    app.useGlobalInterceptors(new TimeoutInterceptor())
 
-      // NOTE: global nest setup
-      app.useGlobalPipes(new ValidationPipe())
+    // NOTE: global nest setup
+    app.useGlobalPipes(new ValidationPipe())
 
-      app.enableShutdownHooks()
+    app.enableShutdownHooks()
 
-      // NOTE: size limit
-      app.use('*', (req, res, next) => {
-        const query = req.query.query || req.body.query || ''
-        if (query.length > 2000) {
-          throw new Error('Query too large')
-        }
-        next()
-      })
-
-      // NOTE: serve static
-      app.useStaticAssets(join(__dirname, `../${STATIC}`))
-
-      const server = await app.listen(PORT!)
-
-      // NOTE: hot module replacement
-      if (module.hot) {
-        module.hot.accept()
-        module.hot.dispose(() => app.close())
+    // NOTE: size limit
+    app.use('*', (req, res, next) => {
+      const query = req.query.query || req.body.query || ''
+      if (query.length > 2000) {
+        throw new Error('Query too large')
       }
+      next()
+    })
 
-      NODE_ENV !== 'production'
+    // NOTE: serve static
+    app.useStaticAssets(join(__dirname, `../${STATIC}`))
+
+    const server = await app.listen(PORT!)
+
+    // NOTE: hot module replacement
+    if (module.hot) {
+      module.hot.accept()
+      module.hot.dispose(() => app.close())
+    }
+
+    NODE_ENV !== 'production'
       ? Logger.log(
-        `🚀  Server ready at http://${DOMAIN!}:${chalk
+          `🚀  Server ready at http://${DOMAIN!}:${chalk
+            .hex(PRIMARY_COLOR!)
+            .bold(`${PORT!}`)}/${END_POINT!}`,
+          'Bootstrap',
+        )
+      : Logger.log(
+          `🚀  Server is listening on port ${chalk
+            .hex(PRIMARY_COLOR!)
+            .bold(`${PORT!}`)}`,
+          'Bootstrap',
+        )
+
+    NODE_ENV !== 'production' &&
+      Logger.log(
+        `🚀  Subscriptions ready at ws://${DOMAIN!}:${chalk
           .hex(PRIMARY_COLOR!)
           .bold(`${PORT!}`)}/${END_POINT!}`,
-        'Bootstrap'
+        'Bootstrap',
       )
-    : Logger.log(
-        `🚀  Server is listening on port ${chalk
-          .hex(PRIMARY_COLOR!)
-          .bold(`${PORT!}`)}`,
-        'Bootstrap'
-      )
-
-      NODE_ENV !== 'production' &&
-			Logger.log(
-				`🚀  Subscriptions ready at ws://${DOMAIN!}:${chalk
-					.hex(PRIMARY_COLOR!)
-					.bold(`${PORT!}`)}/${END_POINT!}`,
-				'Bootstrap'
-			)
-
-
   } catch (error) {
-		Logger.error(`❌  Error starting server, ${error}`, '', 'Bootstrap', false)
-		process.exit()
+    Logger.error(`❌  Error starting server, ${error}`, '', 'Bootstrap', false)
+    process.exit()
   }
 }
 
-bootstrap().catch(e => {
+bootstrap().catch((e) => {
   Logger.error(`❌  Error starting server, ${e}`, '', 'Bootstrap', false)
-	throw e
+  throw e
 })
